@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!-- this Circle moving in BackGround of this page -->
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+
+    <!-- Wrapper of this page those wisible in UI -->
+    <div class="wrapper">
+        <!-- Cart Wraapper -->
+         <div class="cart-wrapper">
+            <div class="img-div">
+                <img class="img" src="./IMG_20220716_142825.jpg" alt="image" height="150px" width="150px"/>
+            </div>
+            <div class="name-profile">
+                <h1>Anuj Bhaladhare</h1>
+                <p>Mechanical Engineer</p>
+            </div>
+            <div class="btn-div">
+                <button onclick="openModal()" class="btn">
+                    <i class="fa fa-share"></i>
+                    Share My Profile
+                </button>
+                <button class="btn">
+                    Follow Me
+                </button>
+            </div>
+            
+        </div> 
+    </div>
+
+    <!-- "Modal" those open after the click button of "Shere my profile" -->
+    <div class="modal-cart">
+        <!-- cart -->
+        <div class="modal-header">
+           <div class="modal-close">
+            <h3>Share My Profile</h3>
+            <i onclick="closeModal()" class="fa fa-close"></i>
+           </div>
+           <hr>
+           <div>
+            <p class="para">Share With Via</p>
+           </div>
+           <div class="icon-container">
+            <a href="#" class="icon" id="facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#" class="icon" id="twitter">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#" class="icon" id="instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" class="icon" id="whatsapp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="#" class="icon" id="telegram">
+              <i class="fa-brands fa-telegram"></i>
+            </a>
+          </div>
+
+        </div>
+    </div>
+    
+    <div class="overlay" onclick="closeModal()"></div>
+    <script src="https://kit.fontawesome.com/c33a357a73.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+
+</body>
+</html>
